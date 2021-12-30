@@ -1,19 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 import s from './components/Setting.module.css'
 import {Button} from "./components/Button";
 import {Input} from "./components/Input";
-import {restoreState} from "./LocalStarage";
-
 
 type SettingPropsType = {
-    setMaxValue: (value: string)=> void
-    setStartValue: (value: string)=> void
+    setMaxValue: (value: string) => void
+    setStartValue: (value: string) => void
     maxValue: string
     startValue: string
-    setValue: ()=> void
-    disButton: ()=> boolean
+    setValue: () => void
+    disButton: () => boolean
 }
-export const Setting = (props:SettingPropsType) => {
+export const Setting = (props: SettingPropsType) => {
 //-----------------------------------STYLE----------------------------------------
     const styleDisco = () => {
         let r = Math.floor(Math.random() * 255)
@@ -32,7 +30,6 @@ export const Setting = (props:SettingPropsType) => {
         transition: '1s box-shadow',
     }
 //--------------------------------------------------------------------------------
-
 
 
     return (

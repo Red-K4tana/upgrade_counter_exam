@@ -1,17 +1,16 @@
-import React, {useState} from "react";
-import s from './Main.module.css';
+import React from "react";
 import {Display} from "./components/Display";
 import {Button} from "./components/Button";
 import {restoreState} from "./LocalStarage";
 
 type CounterPropsType = {
-    setCounter: (value: number)=> void
+    setCounter: (value: number) => void
     counter: number
-    disButton: ()=> boolean
-    errorMessage: ()=> boolean
+    disButton: () => boolean
+    errorMessage: () => boolean
 }
 
-export const Counter = (props:CounterPropsType) => {
+export const Counter = (props: CounterPropsType) => {
     let startValue = Number(restoreState('startValue'))
     let maxValue = Number(restoreState('maxValue'))
 
@@ -21,10 +20,6 @@ export const Counter = (props:CounterPropsType) => {
     const onDropHandler = () => {
         props.setCounter(startValue)
     }
-    /*let disIncrease;
-    let disDrop;
-    props.counter >= maxValue ? disIncrease = true : disIncrease = false
-    props.counter === startValue ? disDrop = true : disDrop = false*/
 
     const disButtonIncrease = () => {
         if (props.counter >= maxValue || props.errorMessage()) {
@@ -36,7 +31,6 @@ export const Counter = (props:CounterPropsType) => {
             return true
         } else return !props.disButton();
     }
-
 
 
 //-----------------------------------STYLE----------------------------------------
@@ -69,7 +63,8 @@ export const Counter = (props:CounterPropsType) => {
 //--------------------------------------------------------------------------------
     return (
         <div style={discoMain}>
-            <Display value={props.counter} maxValue={maxValue} disButton={props.disButton} errorMessage={props.errorMessage}/>
+            <Display value={props.counter} maxValue={maxValue} disButton={props.disButton}
+                     errorMessage={props.errorMessage}/>
             <div style={discoButtons}>
 
                 <Button name={'increase'} callback={onIncreaseHandler} dis={disButtonIncrease()}/>

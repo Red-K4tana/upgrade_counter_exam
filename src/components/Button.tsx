@@ -3,13 +3,13 @@ import s from './Button.module.css'
 
 type propsButtonType = {
     name: string
-    callback:()=>void
+    callback: () => void
     dis?: boolean
 
 }
 
-export const Button = (props: propsButtonType)=> {
-    const onClickHandler = ()=> {
+export const Button = (props: propsButtonType) => {
+    const onClickHandler = () => {
         props.callback()
     }
 

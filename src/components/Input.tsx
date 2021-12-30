@@ -1,4 +1,4 @@
-import React, {useState, ChangeEvent} from 'react';
+import React, {ChangeEvent} from 'react';
 import i from './Display.module.css'
 
 type SelectPropsType = {

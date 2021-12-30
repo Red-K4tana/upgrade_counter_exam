@@ -1,7 +1,6 @@
-
-export const saveState = (key: string, state: string)=> {
+export const saveState = (key: string, state: string) => {
     const stateAsString = JSON.stringify(state)
-    localStorage.setItem(key,stateAsString)
+    localStorage.setItem(key, stateAsString)
 }
 
 export const restoreState = (key: string) => {
