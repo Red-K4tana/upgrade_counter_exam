@@ -1,4 +1,5 @@
 .display {
+    display: flex;
     margin: 10px;
     border: 2px solid #cfa542;
     border-radius: 5%;
@@ -6,7 +7,7 @@
     height: 80px;
     color: #0b2838;
     font-size: 14px;
-    vertical-align: center;
+    justify-content: center;
     background-color: #428aba;
 }
 .number {
@@ -15,7 +16,6 @@
     height: 80px;
     color: #0b2838;
     font-size: 45px;
-    background-color: #428aba;
 }
 .numberOver {
     margin: 10px;
@@ -23,7 +23,20 @@
     height: 80px;
     color: #c11515;
     font-size: 45px;
-    background-color: #428aba;
+}
+.message {
+    margin: 10px;
+    width: auto;
+    height: 80px;
+    color: #0b2838;
+    font-size: 20px;
+}
+.errorMessage {
+    margin: 10px;
+    width: auto;
+    height: 80px;
+    color: #ba4040;
+    font-size: 20px;
 }
 .input {
     margin: 5px;

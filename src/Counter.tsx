@@ -8,6 +8,7 @@ type CounterPropsType = {
     setCounter: (value: number)=> void
     counter: number
     disButton: ()=> boolean
+    errorMessage: ()=> boolean
 }
 
 export const Counter = (props:CounterPropsType) => {
@@ -26,12 +27,12 @@ export const Counter = (props:CounterPropsType) => {
     props.counter === startValue ? disDrop = true : disDrop = false*/
 
     const disButtonIncrease = () => {
-        if (props.counter >= maxValue) {
+        if (props.counter >= maxValue || props.errorMessage()) {
             return true
         } else return !props.disButton();
     }
     const disButtonDrop = () => {
-        if (props.counter === startValue) {
+        if (props.counter === startValue || props.errorMessage()) {
             return true
         } else return !props.disButton();
     }
@@ -68,7 +69,7 @@ export const Counter = (props:CounterPropsType) => {
 //--------------------------------------------------------------------------------
     return (
         <div style={discoMain}>
-            <Display value={props.counter} maxValue={maxValue} disButton={props.disButton}/>
+            <Display value={props.counter} maxValue={maxValue} disButton={props.disButton} errorMessage={props.errorMessage}/>
             <div style={discoButtons}>
 
                 <Button name={'increase'} callback={onIncreaseHandler} dis={disButtonIncrease()}/>

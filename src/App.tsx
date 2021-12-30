@@ -15,7 +15,6 @@ function App() {
         setCounter(Number(startValue))
     }
 
-
     const disButton = () => {
         if (Number(maxValue) <= Number(startValue)) {
             return true
@@ -24,6 +23,9 @@ function App() {
         } else {
             return Number(maxValue) === Number(restoreState('maxValue')) && Number(startValue) === Number(restoreState('startValue'));
         }
+    }
+    const errorMessage = () => {
+        return Number(maxValue) <= Number(startValue) || Number(maxValue) === Number(startValue) || (Number(maxValue) < 0 || Number(startValue) < 0);
     }
 
 
@@ -37,7 +39,7 @@ function App() {
                 setValue={setValue}
                 disButton={disButton}
             />
-            <Counter setCounter={setCounter} counter={counter} disButton={disButton}/>
+            <Counter setCounter={setCounter} counter={counter} disButton={disButton} errorMessage={errorMessage}/>
         </div>
     );
 }
