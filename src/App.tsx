@@ -37,7 +37,7 @@ function App() {
                 setValue={setValue}
                 disButton={disButton}
             />
-            <Counter setCounter={setCounter} counter={counter} forInform={disButton}/>
+            <Counter setCounter={setCounter} counter={counter} disButton={disButton}/>
         </div>
     );
 }
