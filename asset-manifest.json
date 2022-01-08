@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/upgrade_counter_exam/static/css/main.a4607b76.chunk.css",
+    "main.js": "/upgrade_counter_exam/static/js/main.d31340ce.chunk.js",
+    "main.js.map": "/upgrade_counter_exam/static/js/main.d31340ce.chunk.js.map",
+    "runtime-main.js": "/upgrade_counter_exam/static/js/runtime-main.2ab8b888.js",
+    "runtime-main.js.map": "/upgrade_counter_exam/static/js/runtime-main.2ab8b888.js.map",
+    "static/js/2.fbeff29e.chunk.js": "/upgrade_counter_exam/static/js/2.fbeff29e.chunk.js",
+    "static/js/2.fbeff29e.chunk.js.map": "/upgrade_counter_exam/static/js/2.fbeff29e.chunk.js.map",
+    "static/js/3.f2d79397.chunk.js": "/upgrade_counter_exam/static/js/3.f2d79397.chunk.js",
+    "static/js/3.f2d79397.chunk.js.map": "/upgrade_counter_exam/static/js/3.f2d79397.chunk.js.map",
+    "index.html": "/upgrade_counter_exam/index.html",
+    "static/css/main.a4607b76.chunk.css.map": "/upgrade_counter_exam/static/css/main.a4607b76.chunk.css.map",
+    "static/js/2.fbeff29e.chunk.js.LICENSE.txt": "/upgrade_counter_exam/static/js/2.fbeff29e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ab8b888.js",
+    "static/js/2.fbeff29e.chunk.js",
+    "static/css/main.a4607b76.chunk.css",
+    "static/js/main.d31340ce.chunk.js"
+  ]
+}
